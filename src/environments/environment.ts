@@ -1,4 +1,4 @@
-import { domain, clientId } from '../../auth_config.json';
+import authData from '../../auth_config.json';
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
@@ -6,8 +6,8 @@ import { domain, clientId } from '../../auth_config.json';
 export const environment = {
   production: false,
   auth: {
-	  domain,
-	  clientId,
+	  domain: authData.domain,
+	  clientId: authData.clientId,
 	  redirectUri: window.location.origin
   }
 };
