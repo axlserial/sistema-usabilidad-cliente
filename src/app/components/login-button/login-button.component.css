@@ -1,0 +1,11 @@
+.estiloBoton{
+	background: #06717D;
+	border-radius: 8px;
+	text-transform:capitalize;
+	width: 25%;
+	height: 100%;
+}
+.estiloBoton:hover{
+	background: #00AACA;
+	color: aliceblue;
+}

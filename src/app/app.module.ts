@@ -17,6 +17,7 @@ import { ProyectoComponent } from './components/proyecto/proyecto.component';
 import { ChatComponent } from './components/chat/chat.component';
 import { LoginComponent } from './components/login/login.component';
 import { ProyectoRegistroComponent } from './components/proyecto-registro/proyecto-registro.component';
+import { PreloaderComponent } from './components/preloader/preloader.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ProyectoRegistroComponent } from './components/proyecto-registro/proyec
     ProyectoComponent,
     ChatComponent,
     LoginComponent,
-    ProyectoRegistroComponent
+    ProyectoRegistroComponent,
+    PreloaderComponent
   ],
   imports: [
     BrowserModule,
