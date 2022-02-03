@@ -34,15 +34,17 @@ const routes: Routes = [
 	},
 	{
 		path: "proyectos",
-		component: ProyectoComponent
+		component: ProyectoComponent,
+		canActivate: [AuthGuard]
+	},
+	{
+		path: "spreadsheet",
+		component: CalculoComponent,
+		canActivate: [AuthGuard]
 	},
 	{
 		path:"registroProyecto",
 		component:ProyectoRegistroComponent
-	},
-	{
-		path: "spreadsheet",
-		component: CalculoComponent
 	},
 	{
 		path: "**",

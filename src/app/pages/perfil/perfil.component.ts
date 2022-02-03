@@ -8,13 +8,13 @@ import { AuthService } from '@auth0/auth0-angular';
 })
 export class PerfilComponent implements OnInit {
 
-	public perfilJson: string = "";
+	public perfil: any;
 
 	constructor(public auth: AuthService) { }
 
 	ngOnInit(): void {
 		this.auth.user$.subscribe((perfil) => {
-			this.perfilJson = JSON.stringify(perfil, null, 2);
+			this.perfil = JSON.parse(JSON.stringify(perfil, null, 2));
 		});
 	}
 

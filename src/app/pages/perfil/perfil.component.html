@@ -1,2 +1,22 @@
 <app-navbar></app-navbar>
-<pre>{{perfilJson}}</pre>
+<div class="contenedor">
+	<table *ngIf="!!perfil" class="highlight">
+		<thead>
+			<tr>
+				<th colspan="5">Datos Generales</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td></td>
+				<td><b>Nombre</b></td>
+				<td>{{perfil.name}}</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><b>Correo</b></td>
+				<td>{{perfil.email}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
