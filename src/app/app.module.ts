@@ -16,6 +16,7 @@ import { ProyectosComponent } from './pages/proyectos/proyectos.component';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
 import { ChatComponent } from './components/chat/chat.component';
 import { LoginComponent } from './components/login/login.component';
+import { ProyectoRegistroComponent } from './components/proyecto-registro/proyecto-registro.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { LoginComponent } from './components/login/login.component';
     ProyectosComponent,
     ProyectoComponent,
     ChatComponent,
-    LoginComponent
+    LoginComponent,
+    ProyectoRegistroComponent
   ],
   imports: [
     BrowserModule,
