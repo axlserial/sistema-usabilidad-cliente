@@ -1,0 +1,113 @@
+<app-navbar></app-navbar>
+<div class="container row">
+	<div class="col s12 m12 l6 offset-l3 columnaP">
+		<h3 class="center-align">Registro Proyecto</h3>
+
+		<div class="card-content center-align estiloSeccionH6 white-text">
+			<span class="center-align">Información general del proyecto</span>
+		</div>
+
+		<div class="row">
+			<!-- DATOS GENERALES DEL PROYECTO-->
+			<div class="col s12 estiloInput">
+				<input class="browser-default" type="text" name="nombre" placeholder="Nombre del proyecto" autocomplete="off"
+					required>
+			</div>
+
+			<div class="col s12 estiloInput">
+				<select class="browser-default estiloSelect">
+					<option value="" disabled selected>Tipo de Proyecto</option>
+					<option class="darken-4 teal-text" value="1">Comercial</option>
+					<option class="darken-4 teal-text" value="2">Academico</option>
+					<option class="darken-4 teal-text" value="3">Concurso</option>
+				  </select>
+			</div>
+
+			<div class="col s12 estiloInput">
+				<select class="browser-default estiloSelect">
+					<option value="" disabled selected>Tipo de Servicio</option>
+					<option class="darken-4 teal-text" value="1">Pruebas de usabilidad</option>
+					<option class="darken-4 teal-text" value="2">Rediseño de interfaces</option>
+					<option class="darken-4 teal-text" value="3">Concurso</option>
+				  </select>
+			</div>
+
+			<div class="col s12 estiloInput">
+				<input class="browser-default" type="text" name="nombre" placeholder="Lugar del proyecto" autocomplete="off"
+					required>
+			</div>
+
+			<div class="col s12 estiloInput">
+				<input class="browser-default" type="text" name="nombre" placeholder="Sede del proyecto" autocomplete="off"
+					required>
+			</div>
+
+			<div class="col s12 estiloInput">
+				<input class="browser-default" type="text" onfocus="(this.type='date')"  placeholder="Inicio del proyecto" autocomplete="off"
+				required>
+			</div>
+
+			<div class="col s12 estiloInput">
+				<input class="browser-default" type="text" onfocus="(this.type='date')"  placeholder="Fin del proyecto" autocomplete="off"
+				required>
+			</div>
+
+		</div>
+
+		<div class="card-content center-align estiloSeccionH6 white-text">
+			<span class="center-align">Información del cliente</span>
+		</div>
+
+		<div class="row">
+			<!-- DATOS DEL CLIENTE -->
+			<div class="col s12 estiloInput">
+				<input class="browser-default" type="text" name="text" placeholder="Nombre del cliente" autocomplete="off"
+					required>
+			</div>
+
+			<div class="col s12 estiloInput validate">
+				<input class="browser-default" type="email" name="email" placeholder="Correo del cliente" autocomplete="off"
+					required>
+			</div>
+			
+			<div class="col s12 estiloInput">
+				<input class="browser-default validate" type="tel" name="tel" placeholder="Teléfono del cliente" autocomplete="off"
+					required>
+			</div>
+
+		</div>
+
+		<div class="card-content center-align estiloSeccionH6 white-text">
+			<span class="center-align">Información específica</span>
+		</div>
+		
+		<div class="row">
+			<div class="col s12 estiloInput">
+				<input class="browser-default" type="text" name="text" placeholder="Lider del proyecto" autocomplete="off"
+					required>
+			</div>
+
+			<div class="col s12 estiloInput">
+				<input class="browser-default" type="text" name="nombre" placeholder="Estado del proyecto" autocomplete="off"
+					required>
+			</div>
+
+			<div class="col s12 estiloInput">
+				<input class="browser-default" type="text" name="nombre" placeholder="Cotización inicial" autocomplete="off"
+					required>
+			</div>
+
+			<div class="col s12 estiloInput">
+				<input class="browser-default" type="text" name="nombre" placeholder="Cantidad de usuarios requeridos" autocomplete="off"
+					required>
+			</div>
+
+		</div>
+		<div class="row">
+			<div class="col s12 center-align">
+				<a class="waves-effect waves-light btn boton">Continuar</a>
+			</div>
+		</div>
+		
+	</div>
+</div>
