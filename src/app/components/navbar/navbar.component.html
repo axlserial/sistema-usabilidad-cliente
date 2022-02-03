@@ -1,1 +1,27 @@
-<p>navbar works!</p>
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+	<li><a href="#!">one</a></li>
+	<li><a href="#!">two</a></li>
+	<!-- <li class="divider"></li> -->
+	<li><a href="#!">three</a></li>
+</ul>
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" id="nav-titulo" class="brand-logo center">Sistema de control de pruebas de usabilidad</a>
+		<ul class="left hide-on-med-and-down">
+			<!-- Dropdown Trigger -->
+			<li>
+				<a class="dropdown-trigger" href="#!" data-target="dropdown1">
+					Menú<i class="tiny material-icons right">menu</i>
+				</a>
+			</li>
+		</ul>
+		<ul class="right hide-on-med-and-down">
+			<li>
+				<a (click)="redirectToProfile()" href="#">
+					Perfil<i class="material-icons right">account_circle</i>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
