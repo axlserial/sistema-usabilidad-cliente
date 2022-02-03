@@ -1,1 +1,15 @@
-<p>chat works!</p>
+<div class="chat-bubble">
+	<p>chat</p>
+</div>
+<div class="chat-box hide">
+    <div class="messages">
+		<div *ngFor="let msg of usuarioChat.messages;">
+			<div class="msg">{{msg.username}} : {{msg.message}}</div>
+		</div>
+    </div>
+    <div class="input-envio">
+        <form (submit)="submit()" class="control-envio">
+			<input [(ngModel)]="usuarioChat.message" name="message" class="chat-input" type="text" placeholder="Escribe aquí" />
+		</form>
+    </div>
+</div>
