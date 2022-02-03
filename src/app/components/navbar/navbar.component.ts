@@ -15,11 +15,8 @@ export class NavbarComponent implements OnInit {
 	ngOnInit(): void {
 		$(document).ready(function () {
 			$('.sidenav').sidenav();
-			$(".dropdown-trigger").dropdown({ coverTrigger: false });
+			$(".dropdown-trigger").dropdown({ coverTrigger: false, constrainWidth: false });
 		});
 	}
 
-	redirectToProfile(): void {
-		this.router.navigateByUrl('/perfil');
-	}
 }

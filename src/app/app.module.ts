@@ -12,11 +12,15 @@ import { LogoutButtonComponent } from './components/logout-button/logout-button.
 import { AuthenticationButtonComponent } from './components/authentication-button/authentication-button.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
-import { ProyectosComponent } from './pages/proyectos/proyectos.component';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
 import { ChatComponent } from './components/chat/chat.component';
 import { LoginComponent } from './components/login/login.component';
+import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { ProyectoRegistroComponent } from './components/proyecto-registro/proyecto-registro.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatListModule } from '@angular/material/list';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ChecklistComponent } from './components/checklist/checklist.component';
 
 @NgModule({
   declarations: [
@@ -28,10 +32,11 @@ import { ProyectoRegistroComponent } from './components/proyecto-registro/proyec
     AuthenticationButtonComponent,
     PerfilComponent,
     NotFoundComponent,
-    ProyectosComponent,
     ProyectoComponent,
     ChatComponent,
     LoginComponent,
+    ProyectosComponent,
+    ChecklistComponent,
     ProyectoRegistroComponent
   ],
   imports: [
@@ -39,7 +44,10 @@ import { ProyectoRegistroComponent } from './components/proyecto-registro/proyec
     AppRoutingModule,
 	AuthModule.forRoot({
 		...env.auth
-	})
+	}),
+	BrowserAnimationsModule,
+	MatTabsModule,
+	MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
