@@ -1,0 +1,12 @@
+<div class="contenedor">
+	<mat-selection-list #todo>
+		<mat-list-option *ngFor="let todo of todos">
+			{{todo}}
+		</mat-list-option>
+	</mat-selection-list>
+	
+	<p>
+		<br>
+		Options selected: {{todo.selectedOptions.selected.length}}
+	</p>
+</div>
