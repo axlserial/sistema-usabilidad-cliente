@@ -1,0 +1,8 @@
+a {
+	font-size: medium;
+	color: #06717D;
+}
+
+a:hover {
+	background-color: transparent;
+}

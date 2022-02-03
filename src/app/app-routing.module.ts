@@ -4,9 +4,12 @@ import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
+import { ProyectosComponent } from './components/proyectos/proyectos.component';
+import { ProyectoComponent } from './components/proyecto/proyecto.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { AuthGuard } from '@auth0/auth0-angular';
 import { ProyectoRegistroComponent } from './components/proyecto-registro/proyecto-registro.component';
+import { CalculoComponent } from './components/calculo/calculo.component';
 
 const routes: Routes = [
 
@@ -30,12 +33,16 @@ const routes: Routes = [
 		canActivate: [AuthGuard]
 	},
 	{
-		path: "navbar",
-		component: NavbarComponent
+		path: "proyectos",
+		component: ProyectoComponent
 	},
 	{
 		path:"registroProyecto",
 		component:ProyectoRegistroComponent
+	},
+	{
+		path: "spreadsheet",
+		component: CalculoComponent
 	},
 	{
 		path: "**",

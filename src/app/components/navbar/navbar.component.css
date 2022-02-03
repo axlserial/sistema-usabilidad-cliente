@@ -1,3 +1,18 @@
 #nav-titulo {
 	font-size: medium;
 }
+
+#logout {
+	display: flex; 
+	justify-content:center; 
+	align-items:center;
+}
+
+.menu-opcion {
+	font-size: medium;
+	color: #06717D;
+}
+
+.nav-wrapper {
+    background-color: #06717D !important;
+}
