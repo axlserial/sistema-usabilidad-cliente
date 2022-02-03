@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AuthModule } from '@auth0/auth0-angular';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { environment as env } from 'src/environments/environment';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -21,6 +23,8 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatListModule } from '@angular/material/list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ChecklistComponent } from './components/checklist/checklist.component';
+import { SpreadsheetAllModule } from '@syncfusion/ej2-angular-spreadsheet';
+import { CalculoComponent } from './components/calculo/calculo.component';
 
 @NgModule({
   declarations: [
@@ -37,17 +41,21 @@ import { ChecklistComponent } from './components/checklist/checklist.component';
     LoginComponent,
     ProyectosComponent,
     ChecklistComponent,
-    ProyectoRegistroComponent
+    ProyectoRegistroComponent,
+    CalculoComponent
   ],
   imports: [
     BrowserModule,
+	FormsModule,
+	HttpClientModule,
     AppRoutingModule,
 	AuthModule.forRoot({
 		...env.auth
 	}),
 	BrowserAnimationsModule,
 	MatTabsModule,
-	MatListModule
+	MatListModule,
+	SpreadsheetAllModule
   ],
   providers: [],
   bootstrap: [AppComponent]

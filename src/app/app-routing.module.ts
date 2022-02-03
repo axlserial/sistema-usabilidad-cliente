@@ -9,6 +9,7 @@ import { ProyectoComponent } from './components/proyecto/proyecto.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { AuthGuard } from '@auth0/auth0-angular';
 import { ProyectoRegistroComponent } from './components/proyecto-registro/proyecto-registro.component';
+import { CalculoComponent } from './components/calculo/calculo.component';
 
 const routes: Routes = [
 
@@ -38,6 +39,10 @@ const routes: Routes = [
 	{
 		path:"registroProyecto",
 		component:ProyectoRegistroComponent
+	},
+	{
+		path: "spreadsheet",
+		component: CalculoComponent
 	},
 	{
 		path: "**",
