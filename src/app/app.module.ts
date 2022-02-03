@@ -19,6 +19,7 @@ import { ChatComponent } from './components/chat/chat.component';
 import { LoginComponent } from './components/login/login.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { ProyectoRegistroComponent } from './components/proyecto-registro/proyecto-registro.component';
+import { PreloaderComponent } from './components/preloader/preloader.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatListModule } from '@angular/material/list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -39,6 +40,8 @@ import { CalculoComponent } from './components/calculo/calculo.component';
     ProyectoComponent,
     ChatComponent,
     LoginComponent,
+    ProyectoRegistroComponent,
+    PreloaderComponent,
     ProyectosComponent,
     ChecklistComponent,
     ProyectoRegistroComponent,
