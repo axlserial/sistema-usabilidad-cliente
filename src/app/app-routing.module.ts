@@ -8,6 +8,7 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { AuthGuard } from '@auth0/auth0-angular';
+import { ProyectoRegistroComponent } from './components/proyecto-registro/proyecto-registro.component';
 
 const routes: Routes = [
 
@@ -33,6 +34,10 @@ const routes: Routes = [
 	{
 		path: "proyectos",
 		component: ProyectoComponent
+	},
+	{
+		path:"registroProyecto",
+		component:ProyectoRegistroComponent
 	},
 	{
 		path: "**",
