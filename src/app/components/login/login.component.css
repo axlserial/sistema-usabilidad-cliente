@@ -1,0 +1,25 @@
+
+:root{
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+h4{
+    color: #06717D;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px #C2C0C0;
+    padding-top: 30;
+    padding-bottom: 32px;
+}
+
+
+.logoULB{
+	width: 28%;
+	height: 28%;
+    padding-top: 26%;
+}
+
+h4::before{
+    background:#06717D
+}

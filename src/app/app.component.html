@@ -1,5 +1,5 @@
 <div *ngIf="auth.isLoading$ | async; else loaded">
-	<p>Cargando...</p>
+	<app-preloader></app-preloader>
 </div>
 
 <ng-template #loaded>
